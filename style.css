@@ -1,0 +1,323 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Heebo", sans-serif;
+}
+
+body {
+  background-color: #95a1e0;
+  height: 300vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+/* main section's style starts here */
+
+main {
+  height: 280vh;
+  width: 90%;
+  background-color: #fff;
+  position: relative;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  box-shadow: 0 3px 10px rgba(128, 128, 128, 0.5);
+}
+
+/* header section's style starts here */
+
+.header-section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 120vh;
+  width: 100%;
+  background-color: rgba(30, 29, 239, 0.715);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.header-section img {
+  display: block;
+  height: 80vh;
+  width: 60%;
+  background: transparent;
+  position: absolute;
+  top: 20vh;
+  right: 0;
+}
+
+/* header navbar section styles starts here*/
+
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15vh;
+  width: 100%;
+  display: flex;
+}
+
+.navbar-wrapper .logo {
+  position: absolute;
+  left: 100px;
+  top: 50%;
+  font-size: x-large;
+  font-weight: 900;
+  color: #fff;
+  animation: alireza 3s linear infinite;
+  padding: 6px;
+}
+
+@keyframes alireza {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(5deg);
+  }
+  20% {
+    transform: rotate(7deg);
+  }
+  30% {
+    transform: rotate(12deg);
+  }
+  40% {
+    transform: rotate(15deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  60% {
+    transform: rotate(-10deg);
+  }
+  70% {
+    transform: rotate(-15deg);
+  }
+  80% {
+    transform: rotate(-20deg);
+  }
+  90% {
+    transform: rotate(-25deg);
+  }
+}
+
+.navbar-wrapper .navbar-ul {
+  position: absolute;
+  right: 100px;
+  top: 50%;
+  display: inline-flex;
+  list-style: none;
+}
+
+.navbar-wrapper .navbar-ul li {
+  width: 120px;
+}
+
+.navbar-wrapper .navbar-ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: large;
+  font-weight: 500;
+}
+
+.navbar-wrapper .navbar-ul .fas {
+  margin-left: 5px;
+  color: #fff;
+}
+
+/* header navbar section styles ends here */
+
+/* header left side styles starts here */
+
+.header-left-side {
+  height: 80vh;
+  width: 40%;
+  background: transparent;
+  position: absolute;
+  top: 20vh;
+  left: 0;
+  padding-top: 100px;
+  padding-left: 100px;
+}
+
+.header-left-side h1,
+p {
+  text-align: left;
+  color: #fff;
+  line-height: 1.5;
+}
+
+.header-left-side h1 {
+  margin-bottom: 20px;
+}
+
+.header-left-side p {
+  margin-top: 20px;
+}
+
+.header-left-side .span-1 {
+  border-top: 7px solid rgb(81, 188, 255);
+  padding-top: 20px;
+}
+
+.header-left-side-buttons {
+  margin-top: 50px;
+  height: 50px;
+  width: 200px;
+}
+
+.header-left-side-buttons ul {
+  display: inline-flex;
+  list-style: none;
+}
+
+.header-left-side-buttons ul li {
+  position: relative;
+  margin-top: 30px;
+  background-color: #fff;
+  border-radius: 15px;
+  margin: 10px;
+  width: 140px;
+  display: inline-flex;
+  padding: 5px;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 3px 10px rgba(128, 128, 128, 0.5);
+  transition: all 0.5s linear;
+}
+
+.header-left-side-buttons ul li:hover {
+  transform: scale(0.9);
+  cursor: pointer;
+}
+
+.header-left-side-buttons ul li:hover i {
+  color: lime;
+}
+
+.header-left-side-buttons ul li a {
+  text-decoration: none;
+  color: black;
+  text-align: left;
+}
+
+.header-left-side-buttons ul li i {
+  font-size: 2em;
+  transition: all 0.3s linear;
+}
+
+.header-left-side-buttons ul li span {
+  font-size: x-small;
+  text-align: left;
+}
+
+/* header left side styles ends here */
+
+/* Dropdown menus styles starts here */
+
+.portfolio {
+  background-color: transparent;
+  display: none;
+  height: 35vh;
+  z-index: 2;
+  transition: all 0.3s linear;
+}
+
+.portfolio .portfolio-ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding-left: 5px;
+}
+
+.portfolio .portfolio-li {
+  border-bottom: 1px solid white;
+}
+
+.portfolio-li a {
+  color: #fff;
+  margin: 5px;
+  padding-left: 5px;
+  margin-left: 10px;
+  text-align: center;
+  border-bottom: 1px dotted #fff;
+}
+
+.navbar-li:hover .portfolio {
+  display: block;
+  transition: all 0.3s linear;
+}
+
+/* Dropdown menus styles ends here */
+
+/* logos section styles starts here */
+
+.logos-section {
+  position: absolute;
+  bottom: -50px;
+  left: 15%;
+  height: 20vh;
+  width: 70%;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgba(128, 128, 128, 0.5);
+  display: flex;
+  align-items: center;
+}
+
+.logos-section p {
+  color: black;
+  display: inline-block;
+  font-size: large;
+  font-weight: 700;
+  margin-left: 40px;
+}
+
+.logos-section .logo-section-txt {
+  color: black;
+  display: inline-block;
+  font-size: large;
+  font-weight: 700;
+  margin-left: 40px;
+}
+
+.logos-section .logo-section-txt-2 {
+  font-family: "Dancing Script", cursive;
+  font-size: 2.5rem;
+  color: chartreuse;
+}
+
+.logos-section .logo-section-txt-3 {
+  font-size: 2rem;
+}
+
+.logos-section .logo-section-txt-3 .edx-1 {
+  color: rgba(255, 0, 0, 0.9);
+}
+
+.logos-section .logo-section-txt-3 .edx-2 {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.logos-section .logo-section-txt-3 .edx-3 {
+  color: lightseagreen;
+}
+
+.logos-section .logo-section-txt-4 {
+  font-size: 1.5rem;
+  color: chartreuse;
+}
+
+.logos-section .logo-section-txt-4 .udemy {
+  font-size: 3.5rem;
+  font-family: "Dancing Script", cursive;
+}
+
+.logos-section .logo-section-txt-5 {
+  font-size: 1.5rem;
+  color: lightskyblue;
+}
+
+/* header section's styles ends here */
